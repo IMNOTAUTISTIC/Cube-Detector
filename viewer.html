@@ -1,0 +1,12 @@
+<html>
+  <body style="background: black; color: green; text-align: center; font-family: monospace;">
+    <h1>VEX AI Live Feed</h1>
+    <img id="output" src="output.jpg" style="width: 80%; border: 2px solid green;">
+    <script>
+      // Automatically refreshes the image every 0.1 seconds
+      setInterval(() => {
+        document.getElementById('output').src = 'output.jpg?t=' + Date.now();
+      }, 100);
+    </script>
+  </body>
+</html>
